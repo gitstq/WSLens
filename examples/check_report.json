@@ -1,0 +1,74 @@
+{
+  "url": "wss://ws.postman-echo.com/raw",
+  "scheme": "wss",
+  "host": "ws.postman-echo.com",
+  "port": 443,
+  "handshake": {
+    "status": 101,
+    "reason": "Switching Protocols",
+    "elapsed_ms": 3084.358,
+    "accept_ok": true,
+    "negotiated_protocol": null,
+    "headers": {
+      "Date": "Thu, 29 Oct 2026 16:26:32 GMT",
+      "Connection": "upgrade",
+      "Server": "nginx",
+      "Upgrade": "websocket",
+      "Sec-WebSocket-Accept": "No294t14SDtKKplM9+9VWrt0CFI=",
+      "Origin": "https://ws.postman-echo.com"
+    }
+  },
+  "tls": {
+    "version": "TLSv1.2",
+    "cipher": "ECDHE-RSA-AES128-GCM-SHA256 (128 bits)",
+    "verified": true,
+    "cert": {
+      "subject_cn": "postman-echo.com",
+      "subject_o": null,
+      "issuer_cn": "Amazon RSA 2048 M01",
+      "issuer_o": "Amazon",
+      "san": [
+        "postman-echo.com",
+        "*.postman-echo.com"
+      ],
+      "not_before": "Aug 14 00:00:00 2026 GMT",
+      "not_after": "Feb 27 23:59:59 2027 GMT",
+      "valid_from_days": -77,
+      "valid_from": "2026-08-14T08:00:00+08:00",
+      "expire_in_days": 121,
+      "expire_at": "2027-02-28T07:59:59+08:00"
+    }
+  },
+  "checks": [
+    {
+      "name": "握手状态码",
+      "status": "ok",
+      "detail": "HTTP 101 Switching Protocols"
+    },
+    {
+      "name": "Sec-WebSocket-Accept 校验",
+      "status": "ok",
+      "detail": "与 RFC 6455 期望值一致"
+    },
+    {
+      "name": "Upgrade / Connection 头",
+      "status": "ok",
+      "detail": "Upgrade=websocket Connection=upgrade"
+    },
+    {
+      "name": "子协议协商",
+      "status": "skip",
+      "detail": "未请求或未协商子协议"
+    },
+    {
+      "name": "TLS 版本",
+      "status": "ok",
+      "detail": "TLSv1.2 · ECDHE-RSA-AES128-GCM-SHA256 (128 bits)"
+    },
+    {
+      "name": "证书有效期",
+      "status": "ok",
+      "detail": "剩余 121 天 · CN=postman-echo.com"
+    }
+  ]
+}
