@@ -1,0 +1,6 @@
+# WSLens 运行时依赖：无（仅使用 Python 标准库）。
+#
+# 本文件保留为空（仅注释），用于满足 CI / 打包流水线对 requirements.txt 的约定，
+# 并保证 `pip install -r requirements.txt` 不会引入任何第三方包。
+#
+# 开发期可选依赖见 pyproject.toml 的 [project.optional-dependencies] dev。
